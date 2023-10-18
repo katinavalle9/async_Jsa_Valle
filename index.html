@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/select2.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body>
-    
-    <script src="js/pokeApi.js"></script> 
+
+<body >
+    <!-- pokemon1 -->
+    <nav class="bg-secundary">
+        <h1 class="text-center">API'S</h1>
+    </nav>
+    <main class="bg-primary">
+        <section class="container">
+            <div class="row">
+                <h2>Opción 1 para buscar Pokemon</h2>
+                <div class="col-12" id="pokemones">
+                    <input type="search" id="buscarPokemon" class="mb-3">
+                    <button id="buscarPokemonButton" class="btn btn-success">Buscar Pokémon</button>
+                </div>
+            </div>
+            <!-- pokemon2 -->
+            <div class="row">
+                <h2>Opcion 2 para buscar pokemon</h2>
+                <div class="col-12">
+                    <select class="select" name="" data-allow-clear="true" data-placeholder="Selecciona una opción"
+                        id="selectPokemon">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <h2>Libros</h2>
+                <div class="col-12">
+                    <input type="search" id="buscarLibro" class="mb-3">
+                    <button id="btnBuscar" class="btn btn-success">Buscar libro</button>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./lib/select2.min.js"></script>
+    <script src="js/pokeApi.js"></script>
+    <script src="./js/libreryApi.js"></script>
 </body>
+
 </html>
