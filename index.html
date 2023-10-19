@@ -20,7 +20,7 @@
             <div class="row">
                 <h2>Opción 1 para buscar Pokemon</h2>
                 <div class="col-12" id="pokemones">
-                    <input type="search" id="buscarPokemon" class="mb-3">
+                    <input type="search" id="buscarPokemon" class="mb-3" placeholder="Buscar...">
                     <button id="buscarPokemonButton" class="btn btn-success">Buscar Pokémon</button>
                 </div>
             </div>
@@ -28,6 +28,7 @@
             <div class="row">
                 <h2>Opcion 2 para buscar pokemon</h2>
                 <div class="col-12">
+                    <label for="">Busca un pokemon:</label>
                     <select class="select" name="" data-allow-clear="true" data-placeholder="Selecciona una opción"
                         id="selectPokemon">
                         <option value=""></option>
@@ -37,15 +38,22 @@
             <div class="row">
                 <h2>Libro-autor</h2>
                 <div class="col-12">
-                    <input type="search" id="buscarLibro" class="mb-3">
+                    <input type="search" id="buscarLibro" class="mb-3" placeholder="Buscar...">
                     <button id="btnBuscar" class="btn btn-success">Buscar libro</button>
                 </div>
             </div>
             <div class="row">
                 <h2>Autor-libro</h2>
                 <div class="col-12">
-                    <input type="search" id="buscarAutor" class="mb-3">
+                    <input type="search" id="buscarAutor" class="mb-3" placeholder="Buscar...">
                     <button id="btnBuscarAutor" class="btn btn-success">Buscar autor</button>
+                </div>
+            </div>
+            <div class="row">
+                <h2>Bandas</h2>
+                <div class="col-12">
+                    <input type="search" id="buscarGenero" class="mb-3" placeholder="Buscar...">
+                    <button id="btnGenero" class="btn btn-success">Buscar banda</button>
                 </div>
             </div>
         </section>
@@ -59,6 +67,7 @@
     <script src="./lib/select2.min.js"></script>
     <script src="js/pokeApi.js"></script>
     <script src="./js/libreryApi.js"></script>
+    <script src="./js/banda.js"></script>
 </body>
 
 </html>
