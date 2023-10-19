@@ -17,6 +17,7 @@
     </nav>
     <main class="bg-primary">
         <section class="container">
+            <!-- pokemon1 -->
             <div class="row">
                 <h2>Opción 1 para buscar Pokemon</h2>
                 <div class="col-12" id="pokemones">
@@ -35,6 +36,7 @@
                     </select>
                 </div>
             </div>
+            <!-- buscar libro-autor -->
             <div class="row">
                 <h2>Libro-autor</h2>
                 <div class="col-12">
@@ -49,11 +51,22 @@
                     <button id="btnBuscarAutor" class="btn btn-success">Buscar autor</button>
                 </div>
             </div>
+            <!-- banda -->
             <div class="row">
                 <h2>Bandas</h2>
                 <div class="col-12">
                     <input type="search" id="buscarGenero" class="mb-3" placeholder="Buscar...">
                     <button id="btnGenero" class="btn btn-success">Buscar banda</button>
+                </div>
+            </div>
+            <!-- swapi -->
+            <div class="row">
+                <h2>Star Wars</h2>
+                <div class="col-12">
+                    <label for="">Buscar un personaje: </label>
+                    <select class="select" id="buscarStar">
+                        <option value="">Selecciona una opcion</option>
+                    </select>
                 </div>
             </div>
         </section>
@@ -68,6 +81,7 @@
     <script src="js/pokeApi.js"></script>
     <script src="./js/libreryApi.js"></script>
     <script src="./js/banda.js"></script>
+    <script src="./js/swapi.js"></script>
 </body>
 
 </html>
