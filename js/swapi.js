@@ -4,7 +4,7 @@ const buscarStar = document.getElementById("buscarStar");
   let personajeSelect = buscarStar.value;
   const apiStar = `https://swapi.dev/api/people/${personajeSelect}`;
   const personajesResponse = await (await fetch(apiStar)).json();
-  console.log(personajesResponse);
+  // console.log(personajesResponse);
   Personajes(personajesResponse.results); //aqui le estoy pasando el array de results donde se encuentra sus propiedades
 })();
 
